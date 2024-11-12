@@ -6,7 +6,6 @@ const Body = () => {
 	const [loadingAudio, setLoadingAudio] = useState(false);
 	const [loadingVideo, setLoadingVideo] = useState(false);
 
-	// Function to download audio
 	const downloadAudio = async () => {
 		if (url === "") {
 			alert("Please Enter a valid URL");
@@ -29,7 +28,6 @@ const Body = () => {
 			if (disposition) {
 				const filenameMatch = disposition.match(/filename="([^"]+)"/);
 				if (filenameMatch && filenameMatch[1]) {
-					// Decode using decodeURIComponent and replace + with spaces
 					filename = decodeURIComponent(filenameMatch[1].replace(/\+/g, " "));
 				}
 			}
@@ -71,7 +69,6 @@ const Body = () => {
 			if (disposition) {
 				const filenameMatch = disposition.match(/filename="([^"]+)"/);
 				if (filenameMatch && filenameMatch[1]) {
-					// Decode using decodeURIComponent and replace + with spaces
 					filename = decodeURIComponent(filenameMatch[1].replace(/\+/g, " "));
 				}
 			}
