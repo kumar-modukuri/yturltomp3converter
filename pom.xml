@@ -41,7 +41,6 @@
 		</repository>
 	</repositories>
 
-
 	<dependencies>
 		<dependency>
 			<groupId>com.github.felipeucelli</groupId>
