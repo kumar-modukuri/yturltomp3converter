@@ -44,7 +44,7 @@ public class YutmcService
     {
         try
         {
-            Youtube youtube = new Youtube(url,true);
+            Youtube youtube = new Youtube(url);
 
             Stream videoStream = youtube.streams().getHighestResolution();
 
@@ -76,7 +76,7 @@ public class YutmcService
     {
         try
         {
-            Youtube youtube = new Youtube(url,true);
+            Youtube youtube = new Youtube(url);
 
             Stream audioStream = youtube.streams().getOnlyAudio();
 
